@@ -1,0 +1,14 @@
+{
+    "name": "pure-intento/software-system",
+    "autoload": {
+        "psr-4": {
+            "PureIntento\\SoftwareSystem\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "y"
+        }
+    ],
+    "require": {}
+}
