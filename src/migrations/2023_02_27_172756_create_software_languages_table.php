@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger("software_id")->references("id")->on("softwares");
             $table->unsignedInteger("language_id");
             $table->string("name");
-            $table->text("description");
+            $table->text("description")->nullable();
 
             $table->unique([
                 "software_id",

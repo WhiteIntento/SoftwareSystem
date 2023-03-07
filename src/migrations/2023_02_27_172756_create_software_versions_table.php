@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('software_version', function (Blueprint $table) {
+        Schema::create('software_versions', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger("software_id")->references("id")->on("softwares");
             $table->string("version");

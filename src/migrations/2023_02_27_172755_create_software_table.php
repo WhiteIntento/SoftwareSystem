@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('software', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger("software_author_id")->references("id")->on("software_authors");
-            $table->string("license");
+            $table->string("license")->nullable();
             $table->timestamps();
         });
     }
