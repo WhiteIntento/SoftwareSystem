@@ -12,6 +12,7 @@ class SoftwareVersion extends Model
     protected $fillable=[
         "software_id",
         "version",
-        "file_path"
+        "file_path",
+        "downloads",
     ];
 }

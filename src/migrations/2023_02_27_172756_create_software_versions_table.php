@@ -16,6 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger("software_id")->references("id")->on("softwares");
             $table->string("version");
             $table->string("file_path",1000);
+            $table->unsignedInteger("downloads");
             
             $table->timestamps();
         });
